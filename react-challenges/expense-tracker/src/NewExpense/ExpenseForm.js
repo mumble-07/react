@@ -2,21 +2,23 @@ import { useState } from "react";
 import "./ExpenseForm.css";
 
 const ExpenseForm = (props) => {
+  //TITLE
   const [enteredTitle, setEnteredTitle] = useState("");
   const titleChangedHandler = (event) => {
     setEnteredTitle(event.target.value);
   };
-
+  //AMOUNT
   const [enteredAmount, setEnteredAmount] = useState("");
   const amountChangedHandler = (event) => {
     setEnteredAmount(event.target.value);
   };
-
+  //DATE
   const [enteredDate, setEnteredDate] = useState("");
-  const dateChangeHandler = (event) => {
+  const dateChangedHandler = (event) => {
     setEnteredDate(event.target.value);
   };
 
+  //RESET FORMS AND PREVENT REFRESH OF PAGE ON SUBMIT
   const submitHandler = (event) => {
     event.preventDefault();
 
@@ -32,6 +34,7 @@ const ExpenseForm = (props) => {
   };
 
   return (
+    // ON SUBMIT OF FORM, WILL ADD INPUTS TO ARRAY
     <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
         <div className="new-expense__control">
@@ -61,13 +64,15 @@ const ExpenseForm = (props) => {
             min="2019-01-01"
             max="2022-12-31"
             value={enteredDate}
-            onChange={dateChangeHandler}
+            onChange={dateChangedHandler}
           />
         </div>
       </div>
-
+      {/* BUTTONS FOR SUBMIT AND CANCEL */}
       <div className="new-expense__actions">
-        <button type="button">Cancel</button>
+        <button type="button" onClick={props.onCancel}>
+          Cancel
+        </button>
         <button type="submit">Add Expense</button>
       </div>
     </form>
