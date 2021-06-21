@@ -4,9 +4,11 @@ import { useState } from "react";
 
 const NewExpense = (props) => {
   const [showAddButton, setShowAddButton] = useState(false);
+  //STATE 1
   const showForm = () => {
     setShowAddButton(true);
   };
+  //STATE 2
   const hideForm = () => {
     setShowAddButton(false);
   };
