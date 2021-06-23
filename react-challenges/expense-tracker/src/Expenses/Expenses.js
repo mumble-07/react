@@ -1,4 +1,4 @@
-import "./Expenses.css";
+import "./Expenses.scss";
 import Card from "../UI/Card";
 import ExpensesList from "./ExpensesList.js";
 import { useState } from "react";
