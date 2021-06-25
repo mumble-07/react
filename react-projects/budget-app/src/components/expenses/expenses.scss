@@ -15,15 +15,12 @@ $secondaryPink: #ff4b6d;
 
 //=============STYLES=============//
 
-* {
-  box-sizing: border-box;
+.expenses-box {
+  width: 25vw;
+  height: 60vh;
+  margin-left: 3%;
+  border: 7px solid $secondaryGreen;
+  border-radius: 30px;
 }
 
-html {
-  font: $mainFont;
-}
 
-body {
-  margin: 0;
-  background-color: $primaryPeach;
-}

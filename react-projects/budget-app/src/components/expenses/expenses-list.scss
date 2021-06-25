@@ -15,15 +15,7 @@ $secondaryPink: #ff4b6d;
 
 //=============STYLES=============//
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font: $mainFont;
-}
-
-body {
-  margin: 0;
-  background-color: $primaryPeach;
+.expenses-list {
+  font: 150% $subFont;
+  color: $secondaryBlue;
 }
