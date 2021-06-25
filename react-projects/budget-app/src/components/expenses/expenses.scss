@@ -16,11 +16,10 @@ $secondaryPink: #ff4b6d;
 //=============STYLES=============//
 
 .expenses-box {
+  margin-top: 10vh;
   width: 25vw;
-  height: 60vh;
+  height: 65vh;
   margin-left: 3%;
-  border: 7px solid $secondaryGreen;
-  border-radius: 30px;
+  border: 5px solid $secondaryGreen;
+  border-radius: 25px;
 }
-
-

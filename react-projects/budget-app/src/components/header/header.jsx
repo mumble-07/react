@@ -1,7 +1,7 @@
 import "./header.scss";
 import icon1 from "../../img/icon1.png";
 const Header = () => {
-  return (  
+  return (
     <div className="header">
       <div className="logo">
         <img src={icon1} />

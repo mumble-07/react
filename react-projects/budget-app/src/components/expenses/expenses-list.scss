@@ -16,6 +16,19 @@ $secondaryPink: #ff4b6d;
 //=============STYLES=============//
 
 .expenses-list {
-  font: 150% $subFont;
-  color: $secondaryBlue;
+  margin-top: 10%;
+  margin-left: 3%;
+  margin-right: 3%;
+
+  ul {
+    width: 100%;
+    height: 6vh;
+    margin-top: 10%;
+    margin-bottom: auto;
+    font: 150% $subFont;
+    color: $primaryWhite;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: $secondaryGreen;
+  }
 }

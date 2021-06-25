@@ -16,25 +16,40 @@ $secondaryPink: #ff4b6d;
 //=============STYLES=============//
 
 .expenses-filter {
-  font: 100% $secondaryBlue;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+.expenses-filter__control {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
 
-.filter {
-  font: 100% $secondaryBlue;
-  color: $mainFont;
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-bottom: 5%;
-  margin-right: 5%;
+.yearFilter {
+  text-align-last: center;
+  width: 7vw;
+  height: 4vh;
+  border-radius: 24px;
+  border: 3px solid $secondaryBlue;
+  font: 95% $mainFont;
+  color: $secondaryPink;
+  background-color: #ffece8;
 }
 
 .sort {
-  color: $mainFont;
-  margin-top: 5%;
-  margin-left: 5%;
-  margin-bottom: 5%;
-  margin-right: 5%;
+  text-align-last: center;
+  width: 4vw;
+  height: 4vh;
+  border-radius: 24px;
+  border: 3px solid $secondaryBlue;
+  font: 95% $mainFont;
+  color: $secondaryPink;
+  background-color: #ffece8;
 }

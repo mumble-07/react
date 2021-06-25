@@ -8,8 +8,6 @@ const ExpensesList = () => {
       <ExpensesHeader />
       <div className="expenses-list">
         <ul>Item 1</ul>
-        <ul>Item 1</ul>
-        <ul>Item 1</ul>
       </div>
     </div>
   );
