@@ -15,28 +15,16 @@ $secondaryPink: #ff4b6d;
 
 //=============STYLES=============//
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font: $mainFont;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  background-color: $primaryPeach;
-  overflow: hidden;
-}
-
-.main-container {
-  display: flex;
-}
-
-.bal-new-box {
+.expense-date {
   display: flex;
   flex-direction: column;
-  margin-left: 2%;
+  color: $primaryPeach;
+  align-items: flex-end;
+  margin-right: -8%;
+}
+
+.expense-date-year,
+.expense-date-month,
+.expense-date-day {
+  font: 95% $subFont;
 }

@@ -1,14 +1,12 @@
-import react from "react";
 import "./expenses-list.scss";
 import ExpensesHeader from "./expenses-header";
+import ExpenseItems from "./expense-items";
 
-const ExpensesList = () => {
+const ExpensesList = (props) => {
   return (
     <div>
       <ExpensesHeader />
-      <div className="expenses-list">
-        <ul>Item 1</ul>
-      </div>
+      <ExpenseItems />
     </div>
   );
 };

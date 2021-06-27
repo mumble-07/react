@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+//=============FONTS=============//
+$mainFont: "Poppins", sans-serif;
+$subFont: "Source Sans Pro", sans-serif;
+//=============COLORS=============//
+$primaryPeach: #ffece8;
+$primaryBlack: #000000;
+$primaryPink: #f38595;
+$primaryWhite: #ffffff;
+$secondaryBlue: #455898;
+$secondaryGreen: #56a38c;
+$secondaryPink: #ff4b6d;
+
+//=============STYLES=============//
+
+.expense-form-box {
+  margin-top: 2vh;
+  width: 20vw;
+  height: 38vh;
+  border: 5px solid $secondaryGreen;
+  border-radius: 25px;
+  h1 {
+    font: 200% $mainFont;
+  }
+  p {
+    margin: 3%;
+    font: 120% $mainFont;
+    text-align: center;
+  }
+}
+
+.expense-form {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  font: 90% $mainFont;
+
+  [type="text"],
+  [type="number"],
+  [type="date"] {
+    width: 18vw;
+    height: 3.5vh;
+    margin: 0 auto;
+    font: 90% $mainFont;
+    color: $secondaryBlue;
+  }
+  button {
+    width: 7vw;
+    height: 3vh;
+    margin: 0 auto;
+    margin-top: 4%;
+    color: $primaryBlack;
+    background-color: $primaryPink;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+}

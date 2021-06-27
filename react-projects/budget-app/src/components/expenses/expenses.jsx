@@ -1,4 +1,3 @@
-import react from "react";
 import "./expenses.scss";
 import ExpensesList from "./expenses-list";
 
