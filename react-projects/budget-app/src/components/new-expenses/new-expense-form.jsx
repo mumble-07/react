@@ -8,7 +8,7 @@ const NewExpenseForm = () => {
         <label>Transaction Name</label>
         <input type="text" placeholder="Transaction Name" />
         <label>Amount</label>
-        <input type="number" placeholder="Amount" />
+        <input type="number" placeholder="Amount" min="0.001" />
         <label>Date</label>
         <input type="date" />
         <button type="submit">Add</button>

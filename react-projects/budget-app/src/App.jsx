@@ -4,6 +4,8 @@ import Header from "./components/header/header";
 import Expenses from "./components/expenses/expenses";
 import Balance from "./components/balance/balance";
 import NewExpense from "./components/new-expenses/new-expense";
+import Chart from "./components/chart/chart";
+
 // class Dummy_Expenses extends Component {
 //   render() {
 //     return <H1>Class Component</H1>;
@@ -20,6 +22,7 @@ function App() {
           <Balance />
           <NewExpense />
         </div>
+        <Chart />
       </div>
     </div>
   );
