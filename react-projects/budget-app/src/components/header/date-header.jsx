@@ -7,9 +7,14 @@ const DateHeader = () => {
 
   return (
     <div className="date-header">
-      <div className="header-date-month">MONTH</div>
-      <div className="header-date-day">DAY</div>
-      <div className="header-date-year">YEAR</div>
+      <div className="header-date-month">
+        {" "}
+        {new Date().toLocaleString("en-US", { month: "long" })}
+      </div>
+      <div className="header-date-day">
+        {new Date().toLocaleString("en-US", { day: "2-digit" })}
+      </div>
+      <div className="header-date-year">{new Date().getFullYear()}</div>
     </div>
   );
 };

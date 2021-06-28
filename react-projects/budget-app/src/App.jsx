@@ -1,4 +1,4 @@
-import react, { Component } from "react";
+import react from "react";
 import "./App.scss";
 import Header from "./components/header/header";
 import Expenses from "./components/expenses/expenses";
@@ -12,7 +12,15 @@ import Chart from "./components/chart/chart";
 //   }
 // }
 
-function App() {
+const DUMMY_EXPENSES = [
+  {
+    title: "Brand New Laptop",
+    amount: "1000",
+    date: new Date(2020, 2, 28),
+  },
+];
+
+const App = () => {
   return (
     <div>
       <Header />
@@ -26,6 +34,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
