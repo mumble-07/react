@@ -1,12 +1,13 @@
 import "./expenses.scss";
 import ExpensesList from "./expenses-list";
 
-const Expenses = () => {
+const Expenses = (props) => {
+  console.log(props);
   return (
     <div className="expenses-box">
-      <ExpensesList />
+      <ExpensesList items={props.expenses} />
     </div>
   );
 };
 
-export default Expenses;  
+export default Expenses;
