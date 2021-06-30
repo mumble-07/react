@@ -5,7 +5,7 @@ const Expenses = (props) => {
   console.log(props);
   return (
     <div className="expenses-box">
-      <ExpensesList items={props.expenses} />
+      <ExpensesList />
     </div>
   );
 };
