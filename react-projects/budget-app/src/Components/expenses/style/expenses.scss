@@ -15,11 +15,29 @@ $secondaryPink: #ff4b6d;
 
 //=============STYLES=============//
 
-.total-expenses-box {
+.expenses-box {
   margin-top: 10vh;
-  width: 20vw;
-  height: 20vh;
+  width: 25vw;
+  height: 65vh;
   margin-left: 3%;
   border: 5px solid $secondaryGreen;
   border-radius: 25px;
+  overflow-y: scroll;
+}
+
+.expenses-box::-webkit-scrollbar {
+  scrollbar-width: none;
+}
+
+.expenses-box::-webkit-scrollbar-track {
+  background-color: $primaryPeach;
+}
+
+.expenses-box::-webkit-scrollbar {
+  width: 6px;
+  background-color: $secondaryGreen;
+}
+
+.expenses-box::-webkit-scrollbar-thumb {
+  background-color: $primaryPeach;
 }

@@ -5,19 +5,20 @@ import { AppContext } from "../../Context/AppContext";
 
 const Balance = () => {
   /*  const { balance } = useContext(AppContext); */
-  const { expenses, balance } = useContext(AppContext);
+  const { expenses, budget } = useContext(AppContext);
+
   const totalExpenses = expenses.reduce((total, item) => {
     return (total = total + item.amount);
   }, 0);
 
-  const iconType = totalExpenses > balance ? "down-show" : "up-show";
+  const iconType = totalExpenses > budget ? "down-show" : "up-show";
 
   return (
     <div className="balance-box">
       <div>
         <h1>CURRENT BALANCE</h1>
         <div className="current-balance">
-          <h2>$ {balance - totalExpenses}</h2>
+          <h2>$ {budget - totalExpenses}</h2>
           <div className="balance-icons">
             <TiChartLine className={`arrow-${iconType}`} />
           </div>

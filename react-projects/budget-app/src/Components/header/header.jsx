@@ -1,4 +1,4 @@
-import "./header.scss";
+import "./style/header.scss";
 import icon1 from "../../img/icon1.png";
 import DateHeader from "./date-header";
 

@@ -1,9 +1,19 @@
-import "./expense-items.scss";
+import React, { useContext } from "react";
+import "./style/expense-items.scss";
 import { TiDelete } from "react-icons/ti";
-import { TiEdit } from "react-icons/ti";
+
 import ExpenseDate from "./expense-date";
+import { AppContext } from "../../Context/AppContext";
 
 const ExpenseItems = (props) => {
+  const { dispatch } = useContext(AppContext);
+
+  const handleDeleteExpense = () => {
+    dispatch({
+      type: "Delete-Expense",
+      payload: props.key,
+    });
+  };
   return (
     <div className="expenses-items">
       <div className="items">
@@ -12,8 +22,7 @@ const ExpenseItems = (props) => {
         <ExpenseDate date={props.date} />
 
         <div className="items-icons">
-          <TiEdit className="edit" />
-          <TiDelete className="delete" />
+          <TiDelete className="delete" onClick={handleDeleteExpense} />
         </div>
       </div>
     </div>

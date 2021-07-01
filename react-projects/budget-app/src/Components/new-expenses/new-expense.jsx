@@ -1,4 +1,4 @@
-import "./new-expense.scss";
+import "./style/new-expense.scss";
 import NewExpenseForm from "./new-expense-form";
 
 const NewExpense = () => {

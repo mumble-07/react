@@ -4,6 +4,7 @@ import Header from "./Components/header/header";
 import Expenses from "./Components/expenses/expenses";
 import TotalExpenses from "./Components/total-expenses/total-expenses";
 import Balance from "./Components/balance/balance";
+import Budget from "./Components/budget/budget";
 import NewExpense from "./Components/new-expenses/new-expense";
 import Chart from "./Components/chart/chart";
 import { AppProvider } from "./Context/AppContext";
@@ -19,8 +20,11 @@ const App = () => {
             <Balance />
             <NewExpense />
           </div>
-          <TotalExpenses />
-          <Chart />
+          <div>
+            <TotalExpenses />
+            <Chart />
+          </div>
+          <Budget />
         </div>
       </div>
     </AppProvider>

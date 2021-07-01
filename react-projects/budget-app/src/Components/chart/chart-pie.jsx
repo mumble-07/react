@@ -1,4 +1,4 @@
-import "./chart-pie.scss";
+import "./style/chart-pie.scss";
 import { TiChartPie } from "react-icons/ti";
 
 const ChartPie = () => {

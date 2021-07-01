@@ -1,4 +1,4 @@
-import "./expenses-header.scss";
+import "./style/expenses-header.scss";
 
 const ExpensesHeader = () => {
   return (

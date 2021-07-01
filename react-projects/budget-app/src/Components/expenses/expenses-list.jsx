@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "./expenses-list.scss";
+import "./style/expenses-list.scss";
 import ExpensesHeader from "./expenses-header";
 import ExpenseItems from "./expense-items";
 import { AppContext } from "../../Context/AppContext";
@@ -7,7 +7,7 @@ import { AppContext } from "../../Context/AppContext";
 const ExpensesList = () => {
   const { expenses } = useContext(AppContext);
 
-  //  const DUMMY_EXPENSES = [
+  //  const expenses = [
   //   {
   //     title: "Laptop",
   //     amount: "1000",
@@ -33,12 +33,12 @@ const ExpensesList = () => {
   return (
     <div>
       <ExpensesHeader />
-      {expenses.map((item, index) => (
+      {expenses.map((expense) => (
         <ExpenseItems
-          key={index}
-          title={item.title}
-          date={item.date}
-          amount={item.amount}
+          key={expense.id}
+          title={expense.title}
+          date={expense.date}
+          amount={expense.amount}
         />
       ))}
     </div>

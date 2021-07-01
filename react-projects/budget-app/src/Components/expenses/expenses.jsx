@@ -1,8 +1,7 @@
-import "./expenses.scss";
+import "./style/expenses.scss";
 import ExpensesList from "./expenses-list";
 
-const Expenses = (props) => {
-  console.log(props);
+const Expenses = () => {
   return (
     <div className="expenses-box">
       <ExpensesList />

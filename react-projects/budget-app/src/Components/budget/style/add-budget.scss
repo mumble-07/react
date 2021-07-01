@@ -15,12 +15,11 @@ $secondaryPink: #ff4b6d;
 
 //=============STYLES=============//
 
-.chart-header {
-  font: 200% $mainFont;
-  text-align: center;
-}
-
-.pie-chart {
-  font-size: 12vw;
-  color: $secondaryPink;
+.add-budget-box {
+  margin-top: 10vh;
+  width: 40vw;
+  height: 40vh;
+  margin-left: 3%;
+  border: 5px solid $secondaryGreen;
+  border-radius: 25px;
 }

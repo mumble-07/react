@@ -1,4 +1,4 @@
-import "./chart.scss";
+import "./style/chart.scss";
 import ChartPie from "./chart-pie";
 
 const Chart = () => {

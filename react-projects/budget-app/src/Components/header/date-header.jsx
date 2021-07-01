@@ -1,4 +1,4 @@
-import "./date-header.scss";
+import "./style/date-header.scss";
 
 const DateHeader = () => {
   // const month = props.date.toLocaleString("en-US", { month: "long" });
