@@ -23,8 +23,7 @@ const initialState = {
 
 export const AppContext = createContext();
 export const AppProvider = (props) => {
-  const [state, dispatch] = useReducer(AppReducer, 
-  initialState);
+  const [state, dispatch] = useReducer(AppReducer, initialState);
 
   return (
     <AppContext.Provider
