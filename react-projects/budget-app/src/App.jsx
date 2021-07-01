@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import Header from "./Components/header/header";
 import Expenses from "./Components/expenses/expenses";
+import TotalExpenses from "./Components/total-expenses/total-expenses";
 import Balance from "./Components/balance/balance";
 import NewExpense from "./Components/new-expenses/new-expense";
 import Chart from "./Components/chart/chart";
@@ -18,6 +19,7 @@ const App = () => {
             <Balance />
             <NewExpense />
           </div>
+          <TotalExpenses />
           <Chart />
         </div>
       </div>

@@ -2,13 +2,18 @@ import { createContext, useReducer } from "react";
 
 const AppReducer = (state, action) => {
   switch (action.type) {
+    case "New-Expense":
+      return {
+        ...state,
+        expenses: [...state.expenses, action.payLoad],
+      };
     default:
       return state;
   }
 };
 
 const initialState = {
-  balance: 2000,
+  balance: 5000,
   expenses: [
     { id: 1235, title: "Shopping", amount: 40, date: new Date(2020, 3, 2) },
     { id: 1123132, title: "Food", amount: 30, date: new Date(2021, 3, 2) },
@@ -18,7 +23,8 @@ const initialState = {
 
 export const AppContext = createContext();
 export const AppProvider = (props) => {
-  const [state, dispatch] = useReducer(AppReducer, initialState);
+  const [state, dispatch] = useReducer(AppReducer, 
+  initialState);
 
   return (
     <AppContext.Provider

@@ -15,44 +15,11 @@ $secondaryPink: #ff4b6d;
 
 //=============STYLES=============//
 
-.balance-box {
+.total-expenses-box {
   margin-top: 10vh;
-  width: 20vw;
-  height: 25vh;
+  width: 40vw;
+  height: 40vh;
+  margin-left: 3%;
   border: 5px solid $secondaryGreen;
   border-radius: 25px;
-}
-h1 {
-  font: 200% $mainFont;
-  color: $primaryBlack;
-  text-align: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-}
-.current-balance {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-evenly;
-  align-items: center;
-
-  h2 {
-    font: 350% $subFont;
-    color: $primaryBlack;
-  }
-}
-
-.balance-icons {
-  display: flex;
-  flex-direction: column;
-  font-size: 500%;
-}
-
-.arrow-up-show {
-  color: $secondaryGreen;
-}
-
-.arrow-down-show {
-  color: red;
-  transform: rotate(180deg);
 }
