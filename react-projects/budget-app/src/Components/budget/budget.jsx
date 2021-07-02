@@ -21,13 +21,10 @@ const Budget = () => {
   };
 
   return (
-    <div class="budget-box">
-      <h1>BUDGET</h1>
-      <h3>$ {budget}</h3>
+    <div className="budget-box">
       {isEditing ? (
         <AddBudget handleSaveClick={handleSaveClick} budget={budget} />
       ) : (
-        // For part 1 render component inline rather than create a seperate one
         <ShowBudget handleEditClick={handleEditClick} budget={budget} />
       )}
     </div>

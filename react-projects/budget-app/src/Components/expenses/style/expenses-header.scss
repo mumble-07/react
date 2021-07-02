@@ -5,13 +5,10 @@
 $mainFont: "Poppins", sans-serif;
 $subFont: "Source Sans Pro", sans-serif;
 //=============COLORS=============//
-$primaryPeach: #ffece8;
-$primaryBlack: #000000;
-$primaryPink: #f38595;
-$primaryWhite: #ffffff;
-$secondaryBlue: #455898;
-$secondaryGreen: #56a38c;
-$secondaryPink: #ff4b6d;
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
 
 //=============STYLES=============//
 
@@ -37,10 +34,10 @@ $secondaryPink: #ff4b6d;
   width: 7vw;
   height: 4vh;
   border-radius: 24px;
-  border: 3px solid $secondaryBlue;
+  border: 3px solid $primaryTextColor;
   font: 95% $mainFont;
-  color: $secondaryPink;
-  background-color: #ffece8;
+  color: $primaryBackground;
+  background-color: $secondaryTextColor;
 }
 
 .sort {
@@ -48,8 +45,8 @@ $secondaryPink: #ff4b6d;
   width: 4vw;
   height: 4vh;
   border-radius: 24px;
-  border: 3px solid $secondaryBlue;
+  border: 3px solid $primaryTextColor;
   font: 95% $mainFont;
-  color: $secondaryPink;
+  color: $primaryBackground;
   background-color: #ffece8;
 }

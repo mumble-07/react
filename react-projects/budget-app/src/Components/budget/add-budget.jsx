@@ -8,6 +8,10 @@ const AddBudget = (props) => {
     <div className="add-budget-box">
       <input
         required
+        placeholder="Edit Budget Amount: ₲"
+        autoComplete="off"
+        min="0.01"
+        step="0.01"
         type="number"
         id="name"
         value={value}

@@ -5,14 +5,11 @@
 $mainFont: "Poppins", sans-serif;
 $subFont: "Source Sans Pro", sans-serif;
 //=============COLORS=============//
-$primaryPeach: #ffece8;
-$primaryBlack: #000000;
-$primaryPink: #f38595;
-$primaryWhite: #ffffff;
-$secondaryBlue: #455898;
-$secondaryGreen: #56a38c;
-$secondaryPink: #ff4b6d;
 
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
 //=============STYLES=============//
 
 * {
@@ -25,18 +22,51 @@ html {
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   margin: 0;
-  background-color: $primaryPeach;
+  background-color: $primaryBackground;
   overflow: hidden;
 }
 
 .main-container {
-  display: flex;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 45% 5% 55%;
+  grid-template-rows: 35% 5% 20% 30%;
 }
 
-.bal-new-box {
-  display: flex;
-  flex-direction: column;
-  margin-left: 2%;
+.budget-balance-card {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 75%;
+  height: 100%;
+  margin: 5% 5% 5% 5%;
+  border: 5px solid $secondaryBackground;
+  background-color: $secondaryBackground;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(159, 136, 136, 0.4);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.budget-balance-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(172, 167, 12, 0.539);
+}
+
+.total-expenses-card {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  width: 75%;
+  height: 100%;
+  margin: 5% 5% 5% 5%;
+  border: 5px solid $secondaryBackground;
+  background-color: $secondaryBackground;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(159, 136, 136, 0.4);
+  transition: 0.3s;
+  cursor: pointer;
 }

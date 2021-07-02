@@ -5,12 +5,35 @@
 $mainFont: "Poppins", sans-serif;
 $subFont: "Source Sans Pro", sans-serif;
 //=============COLORS=============//
-$primaryPeach: #ffece8;
-$primaryBlack: #000000;
-$primaryPink: #f38595;
-$primaryWhite: #ffffff;
-$secondaryBlue: #455898;
-$secondaryGreen: #56a38c;
-$secondaryPink: #ff4b6d;
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
 
 //=============STYLES=============//
+
+.main-budget-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font: 150% $mainFont;
+  color: $primaryBackground;
+}
+button {
+  width: 5vw;
+  height: 3vh;
+  color: $primaryTextColor;
+  background-color: $secondaryBackground;
+  border-radius: 50px;
+  border: 1px solid $secondaryBackground;
+  font: 70% $mainFont;
+  cursor: pointer;
+
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: $primaryTextColor;
+  color: $primaryBackground;
+}

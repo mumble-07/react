@@ -5,17 +5,16 @@
 $mainFont: "Poppins", sans-serif;
 $subFont: "Source Sans Pro", sans-serif;
 //=============COLORS=============//
-$primaryPeach: #ffece8;
-$primaryBlack: #000000;
-$primaryPink: #f38595;
-$primaryWhite: #ffffff;
-$secondaryBlue: #455898;
-$secondaryGreen: #56a38c;
-$secondaryPink: #ff4b6d;
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
 
 //=============STYLES=============//
 
 .header {
+  width: 100vw;
+  height: 10vh;
   margin-top: 1%;
   margin-bottom: 1%;
   margin-left: 1%;
@@ -23,6 +22,7 @@ $secondaryPink: #ff4b6d;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  color: $primaryTextColor;
 
   .links {
     width: 20vw;
@@ -45,15 +45,25 @@ $secondaryPink: #ff4b6d;
   align-items: center;
 
   img {
-    width: 15%;
-    margin-right: 5%;
+    width: 18%;
     height: auto;
+    margin-right: 0%;
+    margin-left: -5%;
+
     cursor: pointer;
+    transform: rotate(-47deg);
   }
 
   .logo {
-    font: 140% $mainFont;
-    color: $primaryBlack;
     cursor: pointer;
+    line-height: 2%;
+  }
+  h1 {
+    font: 325% $mainFont;
+    color: $primaryTextColor;
+  }
+  h4 {
+    font: 125% $mainFont;
+    color: $primaryTextColor;
   }
 }

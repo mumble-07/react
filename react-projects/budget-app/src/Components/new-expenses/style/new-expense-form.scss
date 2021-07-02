@@ -5,13 +5,10 @@
 $mainFont: "Poppins", sans-serif;
 $subFont: "Source Sans Pro", sans-serif;
 //=============COLORS=============//
-$primaryPeach: #ffece8;
-$primaryBlack: #000000;
-$primaryPink: #f38595;
-$primaryWhite: #ffffff;
-$secondaryBlue: #455898;
-$secondaryGreen: #56a38c;
-$secondaryPink: #ff4b6d;
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
 
 //=============STYLES=============//
 
@@ -19,7 +16,7 @@ $secondaryPink: #ff4b6d;
   margin-top: 2vh;
   width: 20vw;
   height: 38vh;
-  border: 5px solid $secondaryGreen;
+  border: 5px solid $secondaryTextColor;
   border-radius: 25px;
   h1 {
     font: 200% $mainFont;
@@ -44,15 +41,15 @@ $secondaryPink: #ff4b6d;
     height: 3.5vh;
     margin: 0 auto;
     font: 90% $mainFont;
-    color: $secondaryBlue;
+    color: $primaryTextColor;
   }
   button {
     width: 7vw;
     height: 3vh;
     margin: 0 auto;
     margin-top: 4%;
-    color: $primaryBlack;
-    background-color: $primaryPink;
+    color: $secondaryTextColor;
+    background-color: $secondaryBackground;
     border: none;
     border-radius: 25px;
     cursor: pointer;

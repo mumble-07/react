@@ -15,16 +15,13 @@ const App = () => {
       <div>
         <Header />
         <div className="main-container">
-          <Expenses />
-          <div className="bal-new-box">
+          <div className="budget-balance-card">
+            <Budget />
             <Balance />
-            <NewExpense />
           </div>
-          <div>
+          <div className="total-expenses-card">
             <TotalExpenses />
-            <Chart />
           </div>
-          <Budget />
         </div>
       </div>
     </AppProvider>

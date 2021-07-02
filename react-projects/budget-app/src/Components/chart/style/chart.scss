@@ -5,13 +5,10 @@
 $mainFont: "Poppins", sans-serif;
 $subFont: "Source Sans Pro", sans-serif;
 //=============COLORS=============//
-$primaryPeach: #ffece8;
-$primaryBlack: #000000;
-$primaryPink: #f38595;
-$primaryWhite: #ffffff;
-$secondaryBlue: #455898;
-$secondaryGreen: #56a38c;
-$secondaryPink: #ff4b6d;
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
 
 //=============STYLES=============//
 
@@ -20,6 +17,6 @@ $secondaryPink: #ff4b6d;
   width: 20vw;
   height: 20vh;
   margin-left: 3%;
-  border: 5px solid $secondaryGreen;
+  border: 5px solid $primaryTextColor;
   border-radius: 25px;
 }

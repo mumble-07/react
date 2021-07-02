@@ -5,54 +5,45 @@
 $mainFont: "Poppins", sans-serif;
 $subFont: "Source Sans Pro", sans-serif;
 //=============COLORS=============//
-$primaryPeach: #ffece8;
-$primaryBlack: #000000;
-$primaryPink: #f38595;
-$primaryWhite: #ffffff;
-$secondaryBlue: #455898;
-$secondaryGreen: #56a38c;
-$secondaryPink: #ff4b6d;
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
 
 //=============STYLES=============//
 
 .balance-box {
-  margin-top: 10vh;
-  width: 20vw;
-  height: 25vh;
-  border: 5px solid $secondaryGreen;
-  border-radius: 25px;
+  margin: 5% 5%;
 }
 h1 {
   font: 200% $mainFont;
-  color: $primaryBlack;
+  color: $secondaryTextColor;
   text-align: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
 }
 .current-balance {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 
   h2 {
-    font: 350% $subFont;
-    color: $primaryBlack;
+    font: 300% $mainFont;
+    color: $primaryBackground;
   }
 }
 
 .balance-icons {
   display: flex;
   flex-direction: column;
-  font-size: 500%;
+  font-size: 400%;
 }
 
 .arrow-up-show {
-  color: $secondaryGreen;
+  color: $primaryTextColor;
 }
 
 .arrow-down-show {
-  color: red;
+  color: $primaryBackground ;
   transform: rotate(180deg);
 }

@@ -5,13 +5,10 @@
 $mainFont: "Poppins", sans-serif;
 $subFont: "Source Sans Pro", sans-serif;
 //=============COLORS=============//
-$primaryPeach: #ffece8;
-$primaryBlack: #000000;
-$primaryPink: #f38595;
-$primaryWhite: #ffffff;
-$secondaryBlue: #455898;
-$secondaryGreen: #56a38c;
-$secondaryPink: #ff4b6d;
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
 
 //=============STYLES=============//
 
@@ -29,11 +26,11 @@ $secondaryPink: #ff4b6d;
   height: 7vh;
   box-sizing: border-box;
   border-radius: 5px;
-  background-color: $secondaryGreen;
+  background-color: $secondaryTextColor;
   h4 {
     margin-left: 3%;
     font: 130% $subFont;
-    color: $primaryWhite;
+    color: $primaryBackground;
   }
 }
 
@@ -46,11 +43,5 @@ $secondaryPink: #ff4b6d;
 .delete {
   margin-right: 2%;
   font-size: 30px;
-  color: $primaryPeach;
-}
-
-.edit {
-  margin-right: 2%;
-  font-size: 30px;
-  color: $primaryPeach;
+  color: $secondaryBackground;
 }

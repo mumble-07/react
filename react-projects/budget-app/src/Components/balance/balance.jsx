@@ -18,7 +18,7 @@ const Balance = () => {
       <div>
         <h1>CURRENT BALANCE</h1>
         <div className="current-balance">
-          <h2>$ {budget - totalExpenses}</h2>
+          <h2>₲ {budget - totalExpenses}</h2>
           <div className="balance-icons">
             <TiChartLine className={`arrow-${iconType}`} />
           </div>

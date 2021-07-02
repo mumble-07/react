@@ -5,13 +5,10 @@
 $mainFont: "Poppins", sans-serif;
 $subFont: "Source Sans Pro", sans-serif;
 //=============COLORS=============//
-$primaryPeach: #ffece8;
-$primaryBlack: #000000;
-$primaryPink: #f38595;
-$primaryWhite: #ffffff;
-$secondaryBlue: #455898;
-$secondaryGreen: #56a38c;
-$secondaryPink: #ff4b6d;
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
 
 //=============STYLES=============//
 
@@ -20,7 +17,7 @@ $secondaryPink: #ff4b6d;
   width: 25vw;
   height: 65vh;
   margin-left: 3%;
-  border: 5px solid $secondaryGreen;
+  border: 5px solid $secondaryTextColor;
   border-radius: 25px;
   overflow-y: scroll;
 }
@@ -30,14 +27,14 @@ $secondaryPink: #ff4b6d;
 }
 
 .expenses-box::-webkit-scrollbar-track {
-  background-color: $primaryPeach;
+  background-color: $secondaryTextColor;
 }
 
 .expenses-box::-webkit-scrollbar {
   width: 6px;
-  background-color: $secondaryGreen;
+  background-color: $secondaryBackground;
 }
 
 .expenses-box::-webkit-scrollbar-thumb {
-  background-color: $primaryPeach;
+  background-color: $secondaryTextColor;
 }

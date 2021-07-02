@@ -1,15 +1,15 @@
 import "./style/header.scss";
-import icon1 from "../../img/icon1.png";
+import icon2 from "../../img/icon2.png";
 import DateHeader from "./date-header";
 
 const Header = () => {
   return (
     <div className="header">
       <div className="logo-text">
-        <img src={icon1} />
+        <img src={icon2} />
         <div className="logo">
-          <h1>MiBA</h1>
-          <h4>My Budget App</h4>
+          <h1>gitCoin</h1>
+          <h4>push and pull your coins!</h4>
         </div>
       </div>
       <div className="links">
