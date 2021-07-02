@@ -28,6 +28,9 @@ const App = () => {
           <div className="expenses-card">
             <Expenses />
           </div>
+          {/* <div className="chart-card">
+            <Chart />
+          </div> */}
         </div>
       </div>
     </AppProvider>

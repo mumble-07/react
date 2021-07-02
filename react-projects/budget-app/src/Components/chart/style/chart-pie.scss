@@ -12,12 +12,8 @@ $secondaryTextColor: #ffffff;
 
 //=============STYLES=============//
 
-.chart-header {
-  font: 200% $mainFont;
-  text-align: center;
-}
-
-.pie-chart {
-  font-size: 4vw;
-  color: $primaryTextColor;
+.chart-icon img {
+  width: 40%;
+  height: auto;
+  margin: 8% 40%;
 }

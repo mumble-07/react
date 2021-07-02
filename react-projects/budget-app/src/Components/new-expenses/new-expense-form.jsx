@@ -3,7 +3,7 @@ import "./style/new-expense-form.scss";
 import { AppContext } from "../../Context/AppContext";
 import { v4 as uuidv4 } from "uuid";
 
-const NewExpenseForm = () => {
+const NewExpenseForm = (props) => {
   const { dispatch } = useContext(AppContext);
 
   const [title, setTitle] = useState("");
@@ -67,7 +67,10 @@ const NewExpenseForm = () => {
           value={enteredDate}
           onChange={dateChangedHandler}
         />
-        <button type="submit">Add</button>
+        <button type="submit">Add Expense</button>
+        <button type="button" onClick={props.onCancel}>
+          Cancel
+        </button>
       </form>
     </div>
   );

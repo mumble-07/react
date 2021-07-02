@@ -7,10 +7,10 @@ import { AppContext } from "../../Context/AppContext";
 const ExpensesList = () => {
   const { expenses } = useContext(AppContext);
   {
-    if (expenses.id === 0) {
+    if (expenses.length === 0) {
       return (
         <div className="no-item">
-          <h2>FOUND NO EXPENSES.</h2>;
+          <h2>FOUND NO EXPENSES.</h2>
         </div>
       );
     }
