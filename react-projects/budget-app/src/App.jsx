@@ -22,6 +22,12 @@ const App = () => {
           <div className="total-expenses-card">
             <TotalExpenses />
           </div>
+          <div className="add-new-expense-card">
+            <NewExpense />
+          </div>
+          <div className="expenses-card">
+            <Expenses />
+          </div>
         </div>
       </div>
     </AppProvider>

@@ -13,10 +13,13 @@ $secondaryTextColor: #ffffff;
 //=============STYLES=============//
 
 .total-expenses-box {
-  margin-top: 10vh;
-  width: 20vw;
-  height: 20vh;
-  margin-left: 3%;
-  border: 5px solid $secondaryBackground;
+  margin: 5% 5% 5% 5%;
   border-radius: 25px;
+  text-align: center;
+  h1 {
+    font: 200% $mainFont;
+  }
+  h2 {
+    font: 300% $mainFont;
+  }
 }

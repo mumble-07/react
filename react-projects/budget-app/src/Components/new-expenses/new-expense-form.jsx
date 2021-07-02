@@ -69,7 +69,6 @@ const NewExpenseForm = () => {
         />
         <button type="submit">Add</button>
       </form>
-      <p>LET'S TALK ABOUT MONEEEEY!</p>
     </div>
   );
 };
