@@ -16,11 +16,11 @@ const AppReducer = (state, action) => {
           (expense) => expense.id !== action.payload
         ),
       };
-    // case "Edit-Budget":
-    //   return {
-    //     ...state,
-    //     budget: action.payload,
-    //   };
+    case "Add-Budget":
+      return {
+        ...state,
+        budget: action.payload,
+      };
 
     default:
       return state;
