@@ -8,7 +8,10 @@ const NewExpenseForm = () => {
 
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
-  const [date, setDate] = useState("2022");
+  const [enteredDate, setEnteredDate] = useState("");
+  const dateChangedHandler = (event) => {
+    setEnteredDate(event.target.value);
+  };
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -17,7 +20,7 @@ const NewExpenseForm = () => {
       id: uuidv4(),
       title: title,
       amount: parseInt(amount),
-      date: new Date(setDate),
+      date: new Date(enteredDate),
     };
 
     dispatch({
@@ -26,7 +29,7 @@ const NewExpenseForm = () => {
     });
     setTitle("");
     setAmount("");
-    setDate("");
+    setEnteredDate("");
   };
 
   return (
@@ -40,6 +43,7 @@ const NewExpenseForm = () => {
           id="title"
           required
           placeholder="Transaction Name"
+          autoComplete="off"
           value={title}
           onChange={(event) => setTitle(event.target.value)}
         />
@@ -58,8 +62,10 @@ const NewExpenseForm = () => {
         <input
           type="date"
           id="date"
-          value={date}
-          onChange={(event) => setDate(event.target.value)}
+          min="2019-01-01"
+          max="2022-12-31"
+          value={enteredDate}
+          onChange={dateChangedHandler}
         />
         <button type="submit">Add</button>
       </form>

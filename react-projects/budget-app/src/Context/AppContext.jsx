@@ -13,9 +13,14 @@ const AppReducer = (state, action) => {
       return {
         ...state,
         expenses: state.expenses.filter(
-          (expense) => expense.key !== action.payload
+          (expense) => expense.id !== action.payload
         ),
       };
+    // case "Edit-Budget":
+    //   return {
+    //     ...state,
+    //     budget: action.payload,
+    //   };
 
     default:
       return state;
@@ -25,9 +30,9 @@ const AppReducer = (state, action) => {
 const initialState = {
   budget: 5000,
   expenses: [
-    { id: 1, title: "Shopping", amount: 40, date: new Date(2020, 3, 2) },
-    { id: 2, title: "Food", amount: 30, date: new Date(2021, 3, 2) },
-    { id: 3, title: "Laptop", amount: 100, date: new Date(2021, 6, 12) },
+    { id: uuidv4(), title: "Shopping", amount: 40, date: new Date(2020, 3, 2) },
+    { id: uuidv4(), title: "Food", amount: 30, date: new Date(2021, 3, 2) },
+    { id: uuidv4(), title: "Laptop", amount: 100, date: new Date(2021, 6, 12) },
   ],
 };
 

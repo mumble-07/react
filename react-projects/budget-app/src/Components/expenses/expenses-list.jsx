@@ -6,7 +6,15 @@ import { AppContext } from "../../Context/AppContext";
 
 const ExpensesList = () => {
   const { expenses } = useContext(AppContext);
-
+  {
+    if (expenses === 0) {
+      return (
+        <div className="no-item">
+          <h2>FOUND NO EXPENSES.</h2>;
+        </div>
+      );
+    }
+  }
   //  const expenses = [
   //   {
   //     title: "Laptop",
@@ -35,7 +43,7 @@ const ExpensesList = () => {
       <ExpensesHeader />
       {expenses.map((expense) => (
         <ExpenseItems
-          key={expense.id}
+          id={expense.id}
           title={expense.title}
           date={expense.date}
           amount={expense.amount}
