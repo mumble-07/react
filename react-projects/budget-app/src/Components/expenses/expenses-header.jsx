@@ -14,8 +14,6 @@ const ExpensesHeader = () => {
         <select className="sort">
           <option>Sort</option>
           <option>A - Z</option>
-          <option>ASC</option>
-          <option>DCS</option>
         </select>
       </div>
     </div>

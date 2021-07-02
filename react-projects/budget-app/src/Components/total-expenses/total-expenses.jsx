@@ -12,7 +12,7 @@ const TotalExpenses = () => {
   return (
     <div className="total-expenses-box">
       <h1>Total Expenses</h1>
-      <h2>$ {totalExpenses}</h2>
+      <h2>₲ {totalExpenses}</h2>
     </div>
   );
 };

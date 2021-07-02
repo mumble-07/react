@@ -16,12 +16,13 @@ $secondaryTextColor: #ffffff;
   display: flex;
   flex-direction: column;
   color: $secondaryBackground;
-  align-items: flex-end;
-  margin-right: -8%;
+  align-items: center;
+  margin-right: 0%;
 }
 
 .expense-date-year,
 .expense-date-month,
 .expense-date-day {
-  font: 95% $subFont;
+  font: 75% $mainFont;
+  line-height: 140%;
 }

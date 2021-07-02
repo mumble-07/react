@@ -17,11 +17,16 @@ const ExpenseItems = (props) => {
   return (
     <div className="expenses-items">
       <div className="items">
-        <h4>{props.title}</h4>
-        <h4>$ {props.amount}</h4>
-        <ExpenseDate date={props.date} />
+        <div className="title">{props.title}</div>
+        <div className="amount">₲ {props.amount}</div>
+        <div className="date">
+          <ExpenseDate date={props.date} />
+        </div>
+
         <div className="items-icons">
-          <TiDelete onClick={handleDeleteExpense}></TiDelete>
+          <span>
+            <TiDelete onClick={handleDeleteExpense}></TiDelete>
+          </span>
         </div>
       </div>
     </div>

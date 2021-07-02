@@ -13,13 +13,11 @@ $secondaryTextColor: #ffffff;
 //=============STYLES=============//
 
 .expenses-box {
-  margin-top: 10vh;
-  width: 25vw;
-  height: 65vh;
-  margin-left: 3%;
-  border: 5px solid $secondaryTextColor;
-  border-radius: 25px;
+  width: 90%;
+  height: 85%;
+  margin: 5% 5% 5% 5%;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .expenses-box::-webkit-scrollbar {
@@ -27,14 +25,14 @@ $secondaryTextColor: #ffffff;
 }
 
 .expenses-box::-webkit-scrollbar-track {
-  background-color: $secondaryTextColor;
+  background-color: $primaryBackground;
 }
 
 .expenses-box::-webkit-scrollbar {
   width: 6px;
-  background-color: $secondaryBackground;
+  background-color: $primaryTextColor;
 }
 
 .expenses-box::-webkit-scrollbar-thumb {
-  background-color: $secondaryTextColor;
+  background-color: $primaryTextColor;
 }
