@@ -6,7 +6,7 @@ const AppReducer = (state, action) => {
     case "New-Expense":
       return {
         ...state,
-        expenses: [...state.expenses, action.payload],
+        expenses: [...state.expenses, action.expense],
       };
 
     case "Delete-Expense":

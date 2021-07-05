@@ -9,6 +9,7 @@ const NewExpenseForm = (props) => {
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
+
   const dateChangedHandler = (event) => {
     setEnteredDate(event.target.value);
   };
@@ -25,7 +26,7 @@ const NewExpenseForm = (props) => {
 
     dispatch({
       type: "New-Expense",
-      payload: expense,
+      expense: expense,
     });
     setTitle("");
     setAmount("");
