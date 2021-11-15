@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+//=============FONTS=============//
+$mainFont: "Poppins", sans-serif;
+$subFont: "Source Sans Pro", sans-serif;
+//=============COLORS=============//
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
+
+//=============STYLES=============//
+
+.expenses-items {
+  margin: 2% 3% 2% 3%;
+}
+.items {
+  display: grid;
+  grid-template-columns: 5% 30% 25% 30% 20%;
+  width: 95%;
+  height: 7vh;
+  border-radius: 5px;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+.title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin-left: 3%;
+  font: 130% $mainFont;
+  color: $primaryBackground;
+}
+
+.amount {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-left: 3%;
+  font: 130% $mainFont;
+  color: $primaryBackground;
+}
+
+.date {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  margin-left: 3%;
+  font: 130% $mainFont;
+  color: $primaryBackground;
+}
+.items-icons {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 2%;
+  font-size: 200%;
+  color: $primaryBackground;
+}

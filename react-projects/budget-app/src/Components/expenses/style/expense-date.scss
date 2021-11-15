@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+//=============FONTS=============//
+$mainFont: "Poppins", sans-serif;
+$subFont: "Source Sans Pro", sans-serif;
+//=============COLORS=============//
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
+
+//=============STYLES=============//
+
+.expense-date {
+  display: flex;
+  flex-direction: column;
+  color: $secondaryBackground;
+  align-items: center;
+  margin-right: 0%;
+}
+
+.expense-date-year,
+.expense-date-month,
+.expense-date-day {
+  font: 75% $mainFont;
+  line-height: 140%;
+}

@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+//=============FONTS=============//
+$mainFont: "Poppins", sans-serif;
+$subFont: "Source Sans Pro", sans-serif;
+//=============COLORS=============//
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
+
+//=============STYLES=============//
+
+.new-expense {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-expense button {
+  width: 10vw;
+  height: 8vh;
+  margin-top: 20%;
+  color: $primaryBackground;
+  background-color: $secondaryTextColor;
+  border-radius: 50px;
+  border: 1px solid $secondaryBackground;
+  font: 150% $mainFont;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}

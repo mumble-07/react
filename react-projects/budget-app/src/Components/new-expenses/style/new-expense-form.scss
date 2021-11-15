@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+//=============FONTS=============//
+$mainFont: "Poppins", sans-serif;
+$subFont: "Source Sans Pro", sans-serif;
+//=============COLORS=============//
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
+
+//=============STYLES=============//
+
+.expense-form-box {
+  margin: 0 auto;
+  border-radius: 25px;
+  h1 {
+    font: 200% $mainFont;
+  }
+}
+
+label {
+  margin: 1% 0% 1% 5%;
+}
+
+.expense-form {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  font: 85% $mainFont;
+
+  [type="text"],
+  [type="number"],
+  [type="date"] {
+    width: 18vw;
+    height: 3vh;
+    margin: 0 auto;
+    font: 90% $mainFont;
+    color: $primaryBackground;
+  }
+  button {
+    width: 6vw;
+    height: 3vh;
+    margin: 0 auto;
+    margin-top: 4%;
+    color: $primaryBackground;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font: 120% $mainFont;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+}
+
+button:hover {
+  background-color: $primaryBackground;
+  color: $secondaryTextColor;
+}

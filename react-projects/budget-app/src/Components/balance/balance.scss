@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+//=============FONTS=============//
+$mainFont: "Poppins", sans-serif;
+$subFont: "Source Sans Pro", sans-serif;
+//=============COLORS=============//
+$primaryBackground: #1d1b1b;
+$secondaryBackground: #ec4d37;
+$primaryTextColor: #ffdd03;
+$secondaryTextColor: #ffffff;
+
+//=============STYLES=============//
+
+.balance-box {
+  margin: 5% 5%;
+}
+h1 {
+  font: 200% $mainFont;
+  color: $secondaryTextColor;
+  text-align: center;
+}
+.current-balance {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+
+  h2 {
+    font: 300% $mainFont;
+    color: $primaryBackground;
+  }
+}
+
+.balance-icons {
+  display: flex;
+  flex-direction: column;
+  font-size: 400%;
+}
+
+.arrow-up-show {
+  color: $primaryTextColor;
+}
+
+.arrow-down-show {
+  color: $primaryBackground ;
+  transform: rotate(180deg);
+}
